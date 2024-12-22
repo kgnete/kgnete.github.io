@@ -74,6 +74,7 @@ $$
 
 
 
+
 Donde:
 - $e$: Espesor de la capa (en metros).
 
