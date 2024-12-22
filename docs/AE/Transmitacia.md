@@ -73,8 +73,6 @@ R = \frac{e}{\lambda}
 $$
 
 
-
-
 Donde:
 - $e$: Espesor de la capa (en metros).
 
