@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+{% if page.file %}
+<!-- Extraer el nombre del archivo sin la extensión -->
+
+<!-- Generar el enlace al archivo PDF -->
+<div class="export-pdf">
+    <a href="{{ page.file.name }}.pdf" class="md-content__button md-icon" download> {% include
+        ".icons/material/printer.svg"
+        %}
+    </a>
+
+</div>
+{% endif %}
+
+
+{{ super() }}
+{% endblock content %}
