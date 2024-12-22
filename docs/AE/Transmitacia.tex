@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section*{Ejercicio}
+
+\textbf{¿Cuál es la transmitancia térmica ($U$) de la siguiente fachada vertical?}
+
+$$
+U = \frac{1}{R_\text{total}}
+$$
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Material}            & \textbf{Espesor $e$ (mm)} & \textbf{Conductividad térmica $\lambda$ (W/m·K)} \\ \hline
+Ladrillo Obra Vista          & 140                      & 0.87                                             \\ \hline
+Cámara de aire               & -                        & Resistencia térmica = 0.15 m$^2$·K/W           \\ \hline
+Poliestireno extruido        & 30                       & 0.033                                            \\ \hline
+Barrera de vapor             & 10                       & 0.19                                             \\ \hline
+Ladrillo Perforado           & 40                       & 0.44                                             \\ \hline
+Mortero                      & 10                       & 1.4                                              \\ \hline
+Cerámica                     & 10                       & 0.8                                              \\ \hline
+\end{tabular}
+\caption{Características de los materiales de la fachada}
+\end{table}
+
+\subsection*{Cálculo}
+
+La resistencia térmica de cada capa se calcula como:
+
+$$
+R_i = \frac{e_i}{\lambda_i}
+$$
+
+Donde:
+- $e_i$: Espesor de la capa en metros.
+- $\lambda_i$: Conductividad térmica del material en W/m·K.
+
+La resistencia térmica total se calcula como la suma de las resistencias de todas las capas más la resistencia de la cámara de aire:
+
+$$
+R_\text{total} = \sum R_i + R_\text{cámara}
+$$
+
+Finalmente, la transmitancia térmica se calcula como:
+
+$$
+U = \frac{1}{R_\text{total}}
+$$
+
+\subsection*{Resultado}
+
+Sustituyendo los valores:
+
+$$
+R_\text{total} = \frac{0.14}{0.87} + 0.15 + \frac{0.03}{0.033} + \frac{0.01}{0.19} + \frac{0.04}{0.44} + \frac{0.01}{1.4} + \frac{0.01}{0.8} = 1.546 \, \text{m}^2 \cdot \text{K/W}
+$$
+
+$$
+U = \frac{1}{1.546} \approx 0.647 \, \text{W/m}^2 \cdot \text{K}
+$$
+
+\textbf{Solución:} La transmitancia térmica de la fachada es $U \approx 0.647 \, \text{W/m}^2 \cdot \text{K}$.
+
+\end{document}
