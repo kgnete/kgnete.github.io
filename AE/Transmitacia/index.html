@@ -7,23 +7,12 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <meta name="author" content="Román \ \
-\
-\ 
-\
-\
-\ 
-\ 
-\ 
-\ \ \ \ \ \ \
-">
-      
       
         <link rel="canonical" href="https://calcae.es/caes/AE/Transmitacia/">
       
       
       
-        <link rel="next" href="../../CURSOS/Auditoria%20Energetica/Capitulo_2/">
+        <link rel="next" href="../perdidas%20de%20energia%20por%20el%20cerrameinto/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -31,7 +20,7 @@
     
     
       
-        <title>Título del Informe - CAEs</title>
+        <title>Transmitacia - CAEs</title>
       
     
     
@@ -85,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#calculo-de-la-transmitancia-termica-u" class="md-skip">
+        <a href="#transmitacia" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -121,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Título del Informe
+              Transmitacia
             
           </span>
         </div>
@@ -260,64 +249,37 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Título del Informe
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Título del Informe
+    Transmitacia
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+              
+            
+              
+                
   
   
   
-    
   
+    <li class="md-nav__item">
+      <a href="../perdidas%20de%20energia%20por%20el%20cerrameinto/" class="md-nav__link">
+        
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#capas-de-la-fachada" class="md-nav__link">
-    <span class="md-ellipsis">
-      Capas de la fachada
-    </span>
-  </a>
+  <span class="md-ellipsis">
+    perdidas de energia por el cerrameinto
+  </span>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resultado-final" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resultado Final
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
@@ -1025,32 +987,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#capas-de-la-fachada" class="md-nav__link">
-    <span class="md-ellipsis">
-      Capas de la fachada
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resultado-final" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resultado Final
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1080,104 +1016,14 @@
                   
 
 
-<h1 id="calculo-de-la-transmitancia-termica-u">Cálculo de la Transmitancia Térmica (U)</h1>
-<p>La transmitancia térmica de una fachada típica (también conocida como coeficiente de transferencia de calor o valor U) se puede calcular utilizando la siguiente fórmula general:</p>
-<p>$$
-U = \frac{1}{R_\text{total}}
-$$</p>
-<p>Donde $R_\text{total}$ es la resistencia térmica total de la fachada, obtenida como la suma de las resistencias térmicas de todas las capas:</p>
-<p>$$
-R_\text{total} = R_1 + R_2 + \dots + R_n
-$$</p>
-<p>Cada resistencia térmica $R$ para una capa se calcula con la fórmula:</p>
-<p>$$
-R = \frac{e}{\lambda}
-$$</p>
-<p>Donde:
-- $e$: Espesor de la capa (en metros).</p>
-<ul>
-<li>$\lambda$: Conductividad térmica de la capa (en $W/m\cdot K$).</li>
-</ul>
-<p>Para las capas donde se proporciona directamente $R$, simplemente se utiliza ese valor.</p>
-<hr />
-<h2 id="capas-de-la-fachada">Capas de la fachada</h2>
-<table>
-<thead>
-<tr>
-<th>Capa</th>
-<th>$e$ (mm)</th>
-<th>$\lambda$ (W/m·K)</th>
-<th>$R$ ($m^2\cdot K/W$)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ladrillo Obra Vista</td>
-<td>140</td>
-<td>0.87</td>
-<td>$R = \frac{0.14}{0.87} = 0.161$</td>
-</tr>
-<tr>
-<td>Cámara de aire</td>
-<td>10</td>
-<td>-</td>
-<td>$R = 0.15$</td>
-</tr>
-<tr>
-<td>Poliestireno extruido</td>
-<td>30</td>
-<td>0.033</td>
-<td>$R = \frac{0.03}{0.033} = 0.909$</td>
-</tr>
-<tr>
-<td>Barrera de vapor</td>
-<td>10</td>
-<td>0.19</td>
-<td>$R = \frac{0.01}{0.19} = 0.053$</td>
-</tr>
-<tr>
-<td>Ladrillo Perforado</td>
-<td>40</td>
-<td>0.87</td>
-<td>$R = \frac{0.04}{0.87} = 0.046$</td>
-</tr>
-<tr>
-<td>Mortero</td>
-<td>10</td>
-<td>1.4</td>
-<td>$R = \frac{0.01}{1.4} = 0.007$</td>
-</tr>
-<tr>
-<td>Cerámica</td>
-<td>10</td>
-<td>0.8</td>
-<td>$R = \frac{0.01}{0.8} = 0.013$</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="resultado-final">Resultado Final</h2>
-<p>Sumamos todas las resistencias térmicas:</p>
-<p>$$
-R_\text{total} = 0.161 + 0.15 + 0.909 + 0.053 + 0.046 + 0.007 + 0.013 = 1.338 \, m^2 \cdot K/W
-$$</p>
-<p>Finalmente, calculamos la transmitancia térmica:</p>
-<p>$$
-U = \frac{1}{R_\text{total}} = \frac{1}{1.338} = 0.747 \, W/m^2\cdot K
-$$</p>
-<p>Por lo tanto, la transmitancia térmica de la fachada es:</p>
-<p>$$
-U = 0.747 \, W/m^2\cdot K
-$$</p>
+<h1 id="transmitacia">Transmitacia</h1>
+<iframe src="../Transmitacia.pdf" width="100%" height="1000px"></iframe>
 
 
 
 
 
 
-
-  
-  
 
 
 

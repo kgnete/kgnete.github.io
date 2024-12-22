@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\title{Cálculo de Pérdidas de Calor en un Edificio}
+\author{}
+\date{}
+\maketitle
+
+\section*{Datos del problema}
+\begin{itemize}
+    \item Área de cerramientos: \( A = 690 \, \text{m}^2 \)
+    \item Transmitancia térmica: \( U = 1.2 \, \text{W/m}^2 \cdot {}^\circ\text{C} \)
+    \item Temperatura base de calefacción: \( T_b = 18 \, {}^\circ\text{C} \)
+    \item Temperaturas medias:
+    \begin{itemize}
+        \item Noviembre: \( T = 12 \, {}^\circ\text{C} \)
+        \item Diciembre: \( T = 8 \, {}^\circ\text{C} \)
+        \item Enero: \( T = 6 \, {}^\circ\text{C} \)
+        \item Febrero: \( T = 10 \, {}^\circ\text{C} \)
+    \end{itemize}
+\end{itemize}
+
+\section*{Cálculo de los Grados-día de calefacción (GDC)}
+\[
+\text{GDC} = \text{Días del mes} \times (T_b - T_{\text{media}})
+\]
+
+\begin{align*}
+\text{Noviembre:} & \quad 30 \times (18 - 12) = 180 \, \text{GDC} \\
+\text{Diciembre:} & \quad 31 \times (18 - 8) = 310 \, \text{GDC} \\
+\text{Enero:} & \quad 31 \times (18 - 6) = 372 \, \text{GDC} \\
+\text{Febrero:} & \quad 28 \times (18 - 10) = 224 \, \text{GDC} \\
+\text{Total:} & \quad 1,086 \, \text{GDC}
+\end{align*}
+
+\section*{Cálculo de las pérdidas de calor}
+La fórmula para calcular las pérdidas de calor es:
+\[
+q = U \cdot A \cdot \text{GDC} \cdot 24
+\]
+
+Sustituyendo los valores:
+\[
+q = 1.2 \cdot 690 \cdot 1,086 \cdot 24 \, \text{Wh}
+\]
+
+Realizando los cálculos:
+\begin{align*}
+1.2 \cdot 690 & = 828 \\
+828 \cdot 1,086 & = 899,808 \\
+899,808 \cdot 24 & = 21,595,392 \, \text{Wh}
+\end{align*}
+
+Convertimos a kWh:
+\[
+q = \frac{21,595,392}{1,000} = 21,595 \, \text{kWh/año}
+\]
+
+\section*{Resultado final}
+La pérdida de calor del edificio es:
+\[
+\boxed{21,595 \, \text{kWh/año}}
+\]
+
+\end{document}
